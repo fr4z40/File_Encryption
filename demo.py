@@ -1,4 +1,14 @@
 #!/usr/bin/python3
+# -*- coding: utf-8 -*-
+#
+# Copyright 2016 Eduardo Frazão ( https://github.com/fr4z40 )
+#
+#   Licensed under the MIT License;
+#   you may not use this file except in compliance with the License.
+#   You may obtain a copy of the License at
+#
+#     https://opensource.org/licenses/MIT
+#
 
 from AES_File_Encryption import AES_File_Encryption
 from Twofish_File_Encryption import Twofish_File_Encryption
