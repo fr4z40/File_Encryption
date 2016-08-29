@@ -71,8 +71,6 @@ class Twofish_File_Encryption(object):
         fl_in = open(path_input, 'rb')
         fl_in_content = fl_in.read()
 
-        back = len(fl_in_content) ##################################
-
         fl_in.close()
 
         fl_in_content += (b'\x00'*fill_qtd)
@@ -96,7 +94,7 @@ class Twofish_File_Encryption(object):
         fl_in_content = fl_in.read()
         fl_in.close()
 
-        # Creating the object, to perform the decryption
+        # Creating the Twofish object "tf_obj", to perform the decryption
         tf_obj = self.Twofish(key)
 
         cnt_len = len(fl_in_content)
